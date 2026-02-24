@@ -1,73 +1,76 @@
-# React + TypeScript + Vite
+#  Web LAB-2 - Kişisel Portfolyo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Proje Hakkında
 
-Currently, two official plugins are available:
+Bu proje, **Web Tasarımı ve Programlama** dersi kapsamında
+gerçekleştirilen **LAB-2** çalışmasıdır. Proje, Vite + React +
+TypeScript kullanılarak oluşturulmuş bir kişisel portfolyo
+uygulamasıdır.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Uygulamada: - Semantik HTML5 yapısı kurulmuştur - Erişilebilirlik
+(Accessibility) standartları uygulanmıştır - Klavye navigasyonu
+desteklenmiştir - Form doğrulamaları eklenmiştir - Lighthouse testlerine
+uygun yapı oluşturulmuştur
 
-## React Compiler
+------------------------------------------------------------------------
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##  Geliştirici Bilgileri
 
-## Expanding the ESLint configuration
+**Ad Soyad:** Numan Gürbüz\
+**Öğrenci No:** 230542012\
+**Bölüm:** Yazılım Mühendisliği
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+------------------------------------------------------------------------
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Kullanılan Teknolojiler
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+-   React 18
+-   TypeScript
+-   Vite
+-   HTML5 Semantic Tags
+-   CSS (Minimal Styling)
+-   Accessibility (ARIA & Keyboard Navigation)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+------------------------------------------------------------------------
+
+## Kurulum
+
+Projeyi bilgisayarınıza indirdikten sonra terminalde:
+
+``` bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+------------------------------------------------------------------------
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+##  Çalıştırma (Geliştirme Ortamı)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+``` bash
+npm run dev
 ```
+
+Tarayıcıdan aşağıdaki adresi açınız:
+
+http://localhost:5173
+
+------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------
+
+
+
+## Proje Yapısı
+
+    src/
+     ├── App.tsx
+     ├── main.tsx
+     ├── index.css
+     └── assets/
+
+------------------------------------------------------------------------
+
+
+## Lisans
+
+Bu proje eğitim amaçlı geliştirilmiştir.
