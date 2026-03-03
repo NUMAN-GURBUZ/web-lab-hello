@@ -2,9 +2,9 @@ import profil from "./assets/profil.jpg.jpeg";
 function App() {
   return (
     <>
-    <a href="#main-content" className="skip-link">
-      Ana içeriğe atla
-    </a>
+      <a href="#main-content" className="skip-link">
+        Ana içeriğe atla
+      </a>
       <header>
         <nav aria-label="Ana navigasyon">
           <ul>
@@ -17,86 +17,109 @@ function App() {
 
       <main id="main-content">
         <section id="hakkimda">
-  <h1>Numan Gürbüz - Kişisel Portföy</h1>
+          <h1>Numan Gürbüz - Kişisel Portföy</h1>
 
-  <figure>
-    <img
-  src={profil}
-  alt="Numan Gürbüz vesikalık fotoğrafı"
-  width="200"
-/>
-    <figcaption>Numan Gürbüz</figcaption>
-  </figure>
+          <figure>
+            <img
+              src={profil}
+              alt="Numan Gürbüz vesikalık fotoğrafı"
+              width="200"
+            />
+            <figcaption>Numan Gürbüz</figcaption>
+          </figure>
 
-  <p>Yazılım geliştirme ve DevOps alanında kendimi geliştiriyorum.</p>
-</section>
+          <p>Yazılım geliştirme ve DevOps alanında kendimi geliştiriyorum.</p>
 
-       <section id="projeler">
-  <h2>Projelerim</h2>
+          <ul className="skill-tags" role="list" aria-label="Beceri etiketleri">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>Git</li>
+          </ul>
+        </section>
 
-  <article>
-    <h3>Otomatik Raporlama Sistemi</h3>
-    <p>
-      FastAPI kullanarak geliştirdiğim veri analizi ve otomatik PDF raporlama sistemi.
-    </p>
-    <a href="#">Projeyi İncele</a>
-  </article>
+        <section id="projeler">
+          <h2>Projelerim</h2>
 
-  <article>
-    <h3>Stok Takip Otomasyonu</h3>
-    <p>
-      C# ve DevExpress ile geliştirdiğim ürün ve fiyat takip uygulaması.
-    </p>
-    <a href="#">Projeyi İncele</a>
-  </article>
+          <div className="project-grid">
+            <article className="project-card">
+              <img src="proje1.jpg"
+                alt="E-Ticaret sitesi anasayfa ekran goruntusu" />
+              <h3>E-Ticaret Sitesi</h3>
+              <p>React ve Node.js ile gelistirilmis
+                tam kapsamli bir e-ticaret uygulamasi.</p>
+              <ul className="skill-tags">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+              </ul>
+            </article>
 
-  <article>
-    <h3>Akıllı Seyahat Asistanı (ASA)</h3>
-    <p>
-      Web geliştirme teknolojileri kullanarak tasarladığım kapsamlı akıllı seyahat planlama projesi.
-    </p>
-    <a href="#">Projeyi İncele</a>
-  </article>
+            <article className="project-card">
+              <img src="proje2.jpg"
+                alt="Blog uygulamasi yazi listesi gorunumu" />
+              <h3>Blog Uygulamasi</h3>
+              <p>Kisisel blog platformu.
+                Markdown destekli yazi editoru.</p>
+              <ul className="skill-tags">
+                <li>TypeScript</li>
+                <li>Next.js</li>
+              </ul>
+            </article>
 
-</section>
+            <article className="project-card">
+              <img src="proje3.jpg"
+                alt="Hava durumu uygulamasi arayuzu" />
+              <h3>Hava Durumu</h3>
+              <p>OpenWeather API ile anlik
+                hava durumu bilgisi.</p>
+              <ul className="skill-tags">
+                <li>JavaScript</li>
+                <li>API</li>
+              </ul>
+            </article>
+          </div>
+        </section>
 
-       <section id="iletisim">
-  <h2>İletişim</h2>
+        <section id="iletisim">
+          <h2>İletişim</h2>
 
-  <form>
-    <div>
-      <label htmlFor="ad">Ad Soyad</label>
-      <input
-        id="ad"
-        name="ad"
-        type="text"
-        required
-      />
-    </div>
+          <form>
+            <div>
+              <label htmlFor="ad">Ad Soyad</label>
+              <input
+                id="ad"
+                name="ad"
+                type="text"
+                required
+              />
+            </div>
 
-    <div>
-      <label htmlFor="email">E-posta</label>
-      <input
-        id="email"
-        name="email"
-        type="email"
-        required
-      />
-    </div>
+            <div>
+              <label htmlFor="email">E-posta</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+              />
+            </div>
 
-    <div>
-      <label htmlFor="mesaj">Mesaj</label>
-      <textarea
-        id="mesaj"
-        name="mesaj"
-        rows={4}
-        required
-      ></textarea>
-    </div>
+            <div>
+              <label htmlFor="mesaj">Mesaj</label>
+              <textarea
+                id="mesaj"
+                name="mesaj"
+                rows={4}
+                required
+              ></textarea>
+            </div>
 
-    <button type="submit">Gönder</button>
-  </form>
-</section>
+            <button type="submit">Gönder</button>
+          </form>
+        </section>
       </main>
 
       <footer>
